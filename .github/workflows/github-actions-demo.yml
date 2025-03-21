@@ -12,9 +12,9 @@ jobs:
         with:
           node-version: '20'
       - name: Verify Node Version
+        run: node -v
+      - name: Verify NPM Version
         run: npm -v
-      - name: Verify Angular
-        run: ng -v
       - name: Install Dependencies
         run: npm ci
       - name: Run Tests
